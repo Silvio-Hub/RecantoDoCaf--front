@@ -1,0 +1,24 @@
+<div class="backgroudLog">
+  <div class="row containers">
+    <form (mgSubmit)="submitLogin()" [formGroup]="loginForm">
+      <div class="login">
+        <div class="loginText">Logar</div>
+        <div class="text1">
+          Olá! seja bem vindo, faça o seu login.
+        </div>
+
+        <div class="form-group">
+          <input type="usuario" placeholder="Usuário" formControlName="usuario" required />
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Senha" formControlName="senha" required />
+        </div>
+        <div>
+          <button type="submit" class="button" (click)="submitLogin()">
+            Entrar
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+a {
+  text-decoration: none;
+  color: #000;
+
+  &:hover {
+    opacity: 0.8;
+    color: #666;
+  }
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.containers {
+  background: #917a70;
+}
+
+.text1 {
+  color: white;
+  font-size: 1.1rem;
+}

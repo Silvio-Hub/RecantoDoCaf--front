@@ -1,0 +1,24 @@
+<header>
+  <nav class="navbar navbar-light d-flex justify-content-between containers">
+    <div class="container">
+      <div>
+        <p class="navbar-brand text2">RecantoDoCafé</p>
+        <a [routerLink]="['/products']" class="mx-5 text1">Produtos</a>
+        <a class="text1" [routerLink]="['/cart']">Carrinho</a>
+      </div>
+
+      <div *ngIf="!isLogged">
+        <a [routerLink]="['/login']" class="mx-5 text1">Login</a>
+        <a class="text1" [routerLink]="['/register']">Cadastre-se</a>
+      </div>
+      <div *ngIf="isLogged">
+        <a class="pointer text1" (click)="logout()">Sair</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<section>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+</section>
